@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Extrabold.otf">
+            <string>ProximaNova-Extrabld</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController" customModule="HoldTheSpace" customModuleProvider="target">
+            <connections>
+                <outlet property="menuPopOver" destination="ejy-zC-zsc" id="3SS-El-R6O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="ejy-zC-zsc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-CL-lLv">
+                    <rect key="frame" x="20" y="25" width="106" height="121"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t29-Da-2kM">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="31"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                            <state key="normal" title="ABOUT HTS">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="doneBtnclicked:" destination="-1" eventType="touchUpInside" id="4Xk-gN-kwb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-Pm-FKh">
+                            <rect key="frame" x="0.0" y="46" width="104" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="CONTACT HTS">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="recentSpaceBtnClicked:" destination="-1" eventType="touchUpInside" id="h1j-Ra-sGN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xng-RK-F9P">
+                            <rect key="frame" x="0.0" y="91" width="106" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="USER PROFILE">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="profileBtnClicked:" destination="-1" eventType="touchUpInside" id="RZW-9I-U92"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5h3-CL-lLv" firstAttribute="leading" secondItem="ejy-zC-zsc" secondAttribute="leading" constant="20" id="FKh-Kv-uuU"/>
+                <constraint firstItem="5h3-CL-lLv" firstAttribute="top" secondItem="ejy-zC-zsc" secondAttribute="top" constant="25" id="g3k-mR-ZFy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Juw-gg-iRG"/>
+            <point key="canvasLocation" x="964" y="152.47376311844079"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list-a-space" translatesAutoresizingMaskIntoConstraints="NO" id="x3v-Tb-CcA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="sc6-o7-Hil">
+                    <rect key="frame" x="16" y="28" width="342" height="25"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-Vy-t6c">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="Gzb-kQ-9Cp"/>
+                                <constraint firstAttribute="height" constant="25" id="HVV-0i-db3"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Back Icon"/>
+                            <connections>
+                                <action selector="bckBtnClicked:" destination="-1" eventType="touchUpInside" id="tDd-gw-6TT"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mi-16-j8D">
+                            <rect key="frame" x="140" y="0.0" width="77" height="25"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Extrabld" family="Proxima Nova" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-ey-7Pg">
+                            <rect key="frame" x="332" y="0.0" width="10" height="25"/>
+                            <state key="normal" backgroundImage="menu"/>
+                            <connections>
+                                <action selector="menuBtnClicked:" destination="-1" eventType="touchUpInside" id="Vca-CV-fji"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know about HoldTheSapce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-wV-Kqw">
+                    <rect key="frame" x="16" y="126" width="305" height="30.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="25"/>
+                    <color key="textColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-Ee-83I">
+                    <rect key="frame" x="9" y="189.5" width="357" height="399.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sc6-o7-Hil" firstAttribute="leading" secondItem="BVo-Po-TUj" secondAttribute="leading" constant="16" id="6Uz-7w-RQv"/>
+                <constraint firstItem="BVo-Po-TUj" firstAttribute="trailing" secondItem="sc6-o7-Hil" secondAttribute="trailing" constant="17" id="Adt-iP-Mwi"/>
+                <constraint firstItem="5g3-Ee-83I" firstAttribute="top" secondItem="Kz0-wV-Kqw" secondAttribute="bottom" constant="33" id="GhO-KM-UU1"/>
+                <constraint firstItem="BVo-Po-TUj" firstAttribute="trailing" secondItem="5g3-Ee-83I" secondAttribute="trailing" constant="9" id="JIE-YY-fgx"/>
+                <constraint firstItem="BVo-Po-TUj" firstAttribute="bottom" secondItem="5g3-Ee-83I" secondAttribute="bottom" constant="78" id="T3Q-Dd-KDO"/>
+                <constraint firstItem="x3v-Tb-CcA" firstAttribute="leading" secondItem="BVo-Po-TUj" secondAttribute="leading" id="XMv-jF-Y7h"/>
+                <constraint firstItem="5g3-Ee-83I" firstAttribute="leading" secondItem="BVo-Po-TUj" secondAttribute="leading" constant="9" id="aat-F9-ukw"/>
+                <constraint firstItem="x3v-Tb-CcA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="axZ-vF-i5h"/>
+                <constraint firstItem="x3v-Tb-CcA" firstAttribute="bottom" secondItem="BVo-Po-TUj" secondAttribute="bottom" id="fog-1d-rH1"/>
+                <constraint firstItem="Kz0-wV-Kqw" firstAttribute="leading" secondItem="BVo-Po-TUj" secondAttribute="leading" constant="16" id="h7t-BJ-zcM"/>
+                <constraint firstItem="BVo-Po-TUj" firstAttribute="trailing" secondItem="Kz0-wV-Kqw" secondAttribute="trailing" constant="54" id="hwz-dI-M9N"/>
+                <constraint firstItem="Kz0-wV-Kqw" firstAttribute="top" secondItem="sc6-o7-Hil" secondAttribute="bottom" constant="73" id="kGv-rO-Hlp"/>
+                <constraint firstItem="x3v-Tb-CcA" firstAttribute="trailing" secondItem="BVo-Po-TUj" secondAttribute="trailing" id="ldw-d5-pb5"/>
+                <constraint firstItem="sc6-o7-Hil" firstAttribute="top" secondItem="BVo-Po-TUj" secondAttribute="top" constant="8" id="nmY-0e-6Tr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BVo-Po-TUj"/>
+            <point key="canvasLocation" x="140" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back Icon" width="45" height="33"/>
+        <image name="list-a-space" width="960" height="1715"/>
+        <image name="menu" width="10" height="38"/>
+    </resources>
+</document>

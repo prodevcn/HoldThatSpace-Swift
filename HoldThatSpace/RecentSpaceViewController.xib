@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentSpaceViewController" customModule="HoldTheSpace" customModuleProvider="target">
+            <connections>
+                <outlet property="recentSpaceTbl" destination="G8W-MD-8id" id="e02-38-h73"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list-a-space" translatesAutoresizingMaskIntoConstraints="NO" id="TyX-ax-HCS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7ub-tP-dsU">
+                    <rect key="frame" x="17" y="19" width="269" height="20"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDr-wG-7Wr">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="4Zd-t0-R33"/>
+                                <constraint firstAttribute="height" constant="20" id="pPG-qq-Czq"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Back Icon"/>
+                            <connections>
+                                <action selector="bckBtnclicked:" destination="-1" eventType="touchUpInside" id="uST-Rm-0qi"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spotter Recent Space " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOS-VC-BDX">
+                            <rect key="frame" x="75" y="0.0" width="194" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="120" estimatedRowHeight="130" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="G8W-MD-8id">
+                    <rect key="frame" x="16" y="135" width="343" height="512"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L57-w5-7c3" firstAttribute="trailing" secondItem="G8W-MD-8id" secondAttribute="trailing" constant="16" id="2fG-Hj-BnM"/>
+                <constraint firstItem="G8W-MD-8id" firstAttribute="leading" secondItem="L57-w5-7c3" secondAttribute="leading" constant="16" id="3iq-y6-l0O"/>
+                <constraint firstItem="TyX-ax-HCS" firstAttribute="leading" secondItem="L57-w5-7c3" secondAttribute="leading" id="5qD-ah-ok0"/>
+                <constraint firstItem="7ub-tP-dsU" firstAttribute="leading" secondItem="L57-w5-7c3" secondAttribute="leading" constant="17" id="BA1-fe-hoc"/>
+                <constraint firstItem="G8W-MD-8id" firstAttribute="top" secondItem="7ub-tP-dsU" secondAttribute="bottom" constant="96" id="CTQ-Vn-QGj"/>
+                <constraint firstItem="TyX-ax-HCS" firstAttribute="trailing" secondItem="L57-w5-7c3" secondAttribute="trailing" id="F67-o5-y2f"/>
+                <constraint firstItem="7ub-tP-dsU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="19" id="LAH-8C-EcX"/>
+                <constraint firstAttribute="bottom" secondItem="TyX-ax-HCS" secondAttribute="bottom" id="Og2-9X-RoY"/>
+                <constraint firstItem="TyX-ax-HCS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YUf-hh-hQ4"/>
+                <constraint firstItem="L57-w5-7c3" firstAttribute="bottom" secondItem="G8W-MD-8id" secondAttribute="bottom" constant="20" id="apW-SM-24u"/>
+                <constraint firstItem="L57-w5-7c3" firstAttribute="trailing" secondItem="7ub-tP-dsU" secondAttribute="trailing" constant="89" id="xzg-KL-bsm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="L57-w5-7c3"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back Icon" width="45" height="33"/>
+        <image name="list-a-space" width="960" height="1715"/>
+    </resources>
+</document>

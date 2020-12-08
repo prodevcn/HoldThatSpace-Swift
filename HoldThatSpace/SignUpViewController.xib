@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="Proxima Nova Thin.otf">
+            <string>ProximaNovaT-Thin</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="HoldTheSpace" customModuleProvider="target">
+            <connections>
+                <outlet property="ConfirmPasswordField" destination="45a-1V-dAr" id="B0t-f2-hpN"/>
+                <outlet property="ConfirmPasswordView" destination="lk3-XK-l0x" id="7QR-bi-i0m"/>
+                <outlet property="EmailAddressField" destination="IxM-6G-ick" id="tiR-8G-jwC"/>
+                <outlet property="EmailAddressView" destination="RWB-54-M6F" id="e8u-Lz-gnu"/>
+                <outlet property="FirstNameField" destination="hkw-lC-6KZ" id="v2I-sY-axc"/>
+                <outlet property="FirstNameView" destination="aIZ-0r-gH6" id="T3N-Hp-fv0"/>
+                <outlet property="LastNameField" destination="5Oi-3u-dtf" id="Tba-Qi-lrF"/>
+                <outlet property="LastNameView" destination="cNG-bc-Mr0" id="TA1-A5-K9f"/>
+                <outlet property="PasswordField" destination="xD6-uE-uU4" id="2hd-eC-915"/>
+                <outlet property="PasswordView" destination="MtA-Oo-9br" id="Gy0-47-1N8"/>
+                <outlet property="hideUnhideConPassBtn" destination="0rp-ps-Jr1" id="Fgi-Za-LGF"/>
+                <outlet property="hideUnhidePassBtn" destination="hcw-oW-aJV" id="Akk-kx-Xc4"/>
+                <outlet property="typeUserBtn" destination="sLM-kv-0Ek" id="IL5-oB-lYv"/>
+                <outlet property="userTypeTblView" destination="zlv-P0-fNi" id="Bgv-eT-m1w"/>
+                <outlet property="view" destination="PLV-pU-Sdm" id="wCK-lD-TQY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PLV-pU-Sdm">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup-screen" translatesAutoresizingMaskIntoConstraints="NO" id="8fc-ql-ICI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CVj-eg-MJP" userLabel="TextField &amp; Button Stack View">
+                    <rect key="frame" x="17.5" y="155" width="340" height="352"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIZ-0r-gH6">
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-1p-xWw">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="20" background="Text Field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hkw-lC-6KZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jjR-3I-XiL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNG-bc-Mr0">
+                            <rect key="frame" x="0.0" y="52" width="340" height="40"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="51s-Ih-Q7O">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" background="Text Field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5Oi-3u-dtf">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Qgo-5c-PvY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-54-M6F">
+                            <rect key="frame" x="0.0" y="104" width="340" height="40"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Email Address" translatesAutoresizingMaskIntoConstraints="NO" id="yL5-rN-t0g">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" background="Text Field" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IxM-6G-ick">
+                                    <rect key="frame" x="0.0" y="0.0" width="337" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="rln-31-Xcz"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GkB-pK-IdT" userLabel="Button &amp; TableStack View">
+                            <rect key="frame" x="0.0" y="156" width="340" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-kv-0Ek">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Wob-75-B4p"/>
+                                        <constraint firstAttribute="width" constant="340" id="r9i-Le-0Uv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                    <state key="normal" title="USER TYPE" backgroundImage="Text Field">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="userTypeBtnClicked:" destination="-1" eventType="touchUpInside" id="prB-Av-Sg4"/>
+                                    </connections>
+                                </button>
+                                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-P0-fNi">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="dwK-cN-jSK"/>
+                                    </constraints>
+                                    <color key="sectionIndexColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="zlv-P0-fNi" firstAttribute="leading" secondItem="GkB-pK-IdT" secondAttribute="leading" id="MWV-3n-nCf"/>
+                                <constraint firstAttribute="trailing" secondItem="zlv-P0-fNi" secondAttribute="trailing" id="kc4-Hh-tsc"/>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="lzw-5w-5Ek"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtA-Oo-9br">
+                            <rect key="frame" x="0.0" y="208" width="340" height="40"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Password" translatesAutoresizingMaskIntoConstraints="NO" id="olR-KW-jwJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="xD6-uE-uU4">
+                                    <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcw-oW-aJV">
+                                    <rect key="frame" x="315" y="15" width="10" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="hide"/>
+                                    <connections>
+                                        <action selector="hideTextBtnClicked:" destination="-1" eventType="touchUpInside" id="5aB-vi-2SP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Slx-XL-IXx"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lk3-XK-l0x">
+                            <rect key="frame" x="0.0" y="260" width="340" height="40"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Password" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-GZ-lgZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="45a-1V-dAr">
+                                    <rect key="frame" x="0.0" y="0.0" width="337" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rp-ps-Jr1">
+                                    <rect key="frame" x="314" y="15" width="10" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="hide"/>
+                                    <connections>
+                                        <action selector="hideUnhideConPassBtnClicked:" destination="-1" eventType="touchUpInside" id="vij-JL-JZc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Wz9-Jn-Kuv"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh3-0y-L9G">
+                            <rect key="frame" x="0.0" y="312" width="340" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="OdP-qQ-Trg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                            <state key="normal" title="SIGN UP" backgroundImage="button"/>
+                            <connections>
+                                <action selector="signUpBtnClicked:" destination="-1" eventType="touchUpInside" id="UnH-u0-BVY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RWB-54-M6F" secondAttribute="trailing" id="90P-eC-nJJ"/>
+                        <constraint firstItem="aIZ-0r-gH6" firstAttribute="top" secondItem="CVj-eg-MJP" secondAttribute="top" id="IfM-BM-SRm"/>
+                        <constraint firstAttribute="trailing" secondItem="cNG-bc-Mr0" secondAttribute="trailing" id="K9k-WF-Utl"/>
+                        <constraint firstItem="aIZ-0r-gH6" firstAttribute="leading" secondItem="CVj-eg-MJP" secondAttribute="leading" id="Mzb-GA-7p3"/>
+                        <constraint firstItem="RWB-54-M6F" firstAttribute="leading" secondItem="CVj-eg-MJP" secondAttribute="leading" id="Wjn-du-yOF"/>
+                        <constraint firstItem="GkB-pK-IdT" firstAttribute="leading" secondItem="CVj-eg-MJP" secondAttribute="leading" id="ohy-yF-Yxy"/>
+                        <constraint firstAttribute="trailing" secondItem="aIZ-0r-gH6" secondAttribute="trailing" id="uhX-OZ-9T4"/>
+                        <constraint firstAttribute="trailing" secondItem="GkB-pK-IdT" secondAttribute="trailing" id="vZk-lz-34G"/>
+                        <constraint firstItem="cNG-bc-Mr0" firstAttribute="leading" secondItem="CVj-eg-MJP" secondAttribute="leading" id="y9d-pX-QCp"/>
+                    </constraints>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="5DK-AK-FZQ">
+                    <rect key="frame" x="17.5" y="311" width="40.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WL0-pJ-J4M"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do You Have An Account ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHn-4D-1vF">
+                    <rect key="frame" x="60" y="624" width="185" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="185" id="Mm5-Yg-erU"/>
+                        <constraint firstAttribute="height" constant="15" id="yDy-71-EZX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProximaNovaT-Thin" family="Proxima Nova" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPu-C3-EYR">
+                    <rect key="frame" x="252" y="624" width="47" height="15"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="toSignInBtnClicked:" destination="-1" eventType="touchUpInside" id="eNR-Lu-aap"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dPu-C3-EYR" firstAttribute="leading" secondItem="aHn-4D-1vF" secondAttribute="trailing" constant="7" id="34H-dJ-811"/>
+                <constraint firstAttribute="trailing" secondItem="8fc-ql-ICI" secondAttribute="trailing" id="BRY-Tz-or3"/>
+                <constraint firstItem="5DK-AK-FZQ" firstAttribute="top" secondItem="CVj-eg-MJP" secondAttribute="top" constant="156" id="Cb1-bo-SWM"/>
+                <constraint firstItem="8fc-ql-ICI" firstAttribute="top" secondItem="PLV-pU-Sdm" secondAttribute="top" id="D11-2n-iDW"/>
+                <constraint firstItem="aHn-4D-1vF" firstAttribute="top" secondItem="dPu-C3-EYR" secondAttribute="top" id="S9B-w4-c5Z"/>
+                <constraint firstItem="CVj-eg-MJP" firstAttribute="leading" secondItem="Otw-AV-k7B" secondAttribute="leading" constant="17.5" id="TlE-nQ-Asy"/>
+                <constraint firstItem="CVj-eg-MJP" firstAttribute="centerX" secondItem="8fc-ql-ICI" secondAttribute="centerX" id="ZAL-mY-fXe"/>
+                <constraint firstItem="aHn-4D-1vF" firstAttribute="bottom" secondItem="dPu-C3-EYR" secondAttribute="bottom" id="b0p-2u-ur6"/>
+                <constraint firstItem="aHn-4D-1vF" firstAttribute="leading" secondItem="Otw-AV-k7B" secondAttribute="leading" constant="60" id="gKh-WF-How"/>
+                <constraint firstItem="Otw-AV-k7B" firstAttribute="bottom" secondItem="aHn-4D-1vF" secondAttribute="bottom" constant="28" id="gpn-Wg-NAg"/>
+                <constraint firstItem="5DK-AK-FZQ" firstAttribute="trailing" secondItem="CVj-eg-MJP" secondAttribute="trailing" constant="-299.5" id="jfB-ao-g3t"/>
+                <constraint firstItem="Otw-AV-k7B" firstAttribute="trailing" secondItem="CVj-eg-MJP" secondAttribute="trailing" constant="17.5" id="kJi-mt-rJW"/>
+                <constraint firstItem="CVj-eg-MJP" firstAttribute="leading" secondItem="5DK-AK-FZQ" secondAttribute="leading" id="nyU-Wi-dZl"/>
+                <constraint firstAttribute="bottom" secondItem="8fc-ql-ICI" secondAttribute="bottom" id="skg-P4-vZS"/>
+                <constraint firstItem="8fc-ql-ICI" firstAttribute="leading" secondItem="PLV-pU-Sdm" secondAttribute="leading" id="v4E-2s-Y1Q"/>
+                <constraint firstItem="CVj-eg-MJP" firstAttribute="top" secondItem="Otw-AV-k7B" secondAttribute="top" constant="135" id="wna-tt-yl6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Otw-AV-k7B"/>
+            <point key="canvasLocation" x="-271.19999999999999" y="-392.65367316341832"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Email Address" width="113" height="113"/>
+        <image name="Password" width="113" height="113"/>
+        <image name="Text Field" width="800" height="123"/>
+        <image name="User" width="113" height="113"/>
+        <image name="button" width="789" height="113"/>
+        <image name="hide" width="35" height="35"/>
+        <image name="signup-screen" width="960" height="1715"/>
+    </resources>
+</document>

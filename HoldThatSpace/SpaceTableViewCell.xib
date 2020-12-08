@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="KGk-i7-Jjw" customClass="SpaceTableViewCell" customModule="HoldTheSpace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile img" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-7d-1SV">
+                        <rect key="frame" x="15" y="12" width="50" height="59"/>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hP-DD-yym">
+                        <rect key="frame" x="73" y="13" width="70" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Z4J-ys-uVi"/>
+                            <constraint firstAttribute="height" constant="20" id="zVn-7P-vYT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$24.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtl-FD-a7T">
+                        <rect key="frame" x="73" y="36" width="49.5" height="18"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                        <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBa-5c-qDl">
+                        <rect key="frame" x="154" y="25" width="100" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Q0f-ee-kUq"/>
+                            <constraint firstAttribute="width" constant="100" id="fl8-qR-dca"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="10"/>
+                        <state key="normal" title="HoldThatSpace" backgroundImage="button colour">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="holdThatSpaceBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zIH-LY-Gt6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9hP-DD-yym" firstAttribute="leading" secondItem="gKu-7d-1SV" secondAttribute="trailing" constant="8" id="BRL-mF-JKO"/>
+                    <constraint firstItem="gKu-7d-1SV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="In1-TV-oNB"/>
+                    <constraint firstAttribute="bottom" secondItem="gKu-7d-1SV" secondAttribute="bottom" constant="28.5" id="Jd7-sK-JWD"/>
+                    <constraint firstItem="9hP-DD-yym" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="S5C-dU-40Q"/>
+                    <constraint firstItem="kBa-5c-qDl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="TxT-NI-xQ6"/>
+                    <constraint firstItem="kBa-5c-qDl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="bC4-vA-Akx"/>
+                    <constraint firstItem="Rtl-FD-a7T" firstAttribute="top" secondItem="9hP-DD-yym" secondAttribute="bottom" constant="3" id="iJ6-OD-Biz"/>
+                    <constraint firstItem="9hP-DD-yym" firstAttribute="leading" secondItem="Rtl-FD-a7T" secondAttribute="leading" id="lPn-r6-HnX"/>
+                    <constraint firstItem="9hP-DD-yym" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="73" id="oUs-of-FSX"/>
+                    <constraint firstItem="gKu-7d-1SV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="r1S-Do-f8C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="zAB-qV-GA8"/>
+            <connections>
+                <outlet property="holdThatSpaceBtn" destination="kBa-5c-qDl" id="7az-YJ-MKp"/>
+                <outlet property="imageOfProfile" destination="gKu-7d-1SV" id="BH5-oG-QAu"/>
+                <outlet property="priceLbl" destination="Rtl-FD-a7T" id="Uis-i3-zjp"/>
+                <outlet property="spaceTitleLbl" destination="9hP-DD-yym" id="hdu-Za-w0F"/>
+            </connections>
+            <point key="canvasLocation" x="113.59999999999999" y="113.3433283358321"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Profile img" width="249" height="249"/>
+        <image name="button colour" width="240" height="71"/>
+    </resources>
+</document>
